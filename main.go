@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // func main(){
 // 	// fmt.Println("Hello World")
@@ -110,5 +113,12 @@ func main() {
 
 	fmt.Println(result)
 
-	
+	if x:= math.Sqrt(4); x< 10 {
+		fmt.Println(x)
+	} else if x > 0 {
+		fmt.Println(1)
+	} else {
+		fmt.Println(2)
+	}
+
 }
