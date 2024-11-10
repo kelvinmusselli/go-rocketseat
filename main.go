@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // func main(){
 // 	// fmt.Println("Hello World")
 // 	// fmt.Println(pacote.Foo)
@@ -68,3 +70,45 @@ package main
 // 	arr := [10]int{5:400, 0:1}
 // 	fmt.Println(arr)
 // }
+
+func main() {
+	var result int
+
+	for i := 0; i < 10; i++ {
+		result++
+	}
+
+	// var i int
+	// for ; i < 10;  {
+	// 	result++
+	// }
+
+
+	arr :=[10]int{1,2,3,4,5,6,7,8,9,10}
+
+	for i, elem := range arr {
+		fmt.Println("Dentro")
+		fmt.Println(i, elem)
+
+	}
+	for _, elem := range arr {
+		fmt.Println("Dentro")
+		fmt.Println(elem)
+
+	}
+
+
+	//novo
+	for range 10 {
+		//mesma coisa que o padrao tradicional
+	}
+
+	for i:= range 10 {
+		//mesma coisa que o padrao tradicional
+		fmt.Println(i)
+	}
+
+	fmt.Println(result)
+
+	
+}
