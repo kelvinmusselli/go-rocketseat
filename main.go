@@ -1,24 +1,26 @@
 package main
 
-import "fmt"
+// func main(){
+// 	// fmt.Println("Hello World")
+// 	// fmt.Println(pacote.Foo)
+// 	// pacote.PrintMinha()
 
-func main(){
-	// fmt.Println("Hello World")
-	// fmt.Println(pacote.Foo)
-	// pacote.PrintMinha()
+// 	// fmt.Println(somar(1,2))
+// 	// a, b := swap(10,20)
+// 	// fmt.Println(a,b)
 
-	// fmt.Println(somar(1,2))
-	// a, b := swap(10,20)
-	// fmt.Println(a,b)
+// 	// fmt.Println(dividir(10,2))
+// 	// x := somarHighOrder(2)(3)
+// 	// f:= somarHighOrder(1)
+// 	// x:= f(3)
+// 	// fmt.Println(x)
 
-	// fmt.Println(dividir(10,2))
-	// x := somarHighOrder(2)(3)
-	// f:= somarHighOrder(1)
-	// x:= f(3)
-	// fmt.Println(x)
+// 	// fmt.Println(somarvariadas(1,2,3))
 
-	fmt.Println(somarvariadas(1,2,3))
-}
+// 	// var nome, sobrenome string = "Kelvin", "Musselli"
+
+// 	// fmt.Println(nome, sobrenome)
+// }
 
 //se a primeira letra da funcao ou var for
 //minuscula é privada se for mais maiuscula
@@ -45,10 +47,24 @@ func main(){
 // }
 
 //funcao variatica
-func somarvariadas (nums ...int) int {
-	var out int
-	for _, n:= range nums {
-		out += n
-	}
-	return out
-}
+// func somarvariadas (nums ...int) int {
+// 	var out int
+// 	for _, n:= range nums {
+// 		out += n
+// 	}
+// 	return out
+// }
+
+// converter um valor para outro
+// func main() {
+// 	var x int = 65
+// 	f:= float64(x)
+// }
+
+//arrays
+
+// func main() {
+// 	// como especificar um valor para uma posicao do array
+// 	arr := [10]int{5:400, 0:1}
+// 	fmt.Println(arr)
+// }
