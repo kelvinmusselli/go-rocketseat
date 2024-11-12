@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"time"
 )
 
 // func main(){
@@ -121,4 +122,48 @@ func main() {
 		fmt.Println(2)
 	}
 
+	fmt.Println("switch")
+
+	do(1)
+
+	fmt.Println(isWeekend(time.Now()))
+
+
+}
+
+// nao precisa de break
+func do(x int) {
+	switch x {
+	case 1:
+		fmt.Println(1)
+		fallthrough
+	case 2:
+		fmt.Println(2)
+	default:
+		fmt.Println("default")
+	}
+
+	fmt.Println("exemplo2")
+	switch  {
+	case x == 1:
+		fmt.Println(11)
+		fallthrough
+	case x == 2:
+		fmt.Println(22)
+	default:
+		fmt.Println("default2")
+	}
+
+
+
+}
+
+// validar se é quarta
+func isWeekend(x time.Time)bool{
+	switch {
+	case x.Weekday() > 0 && x.Weekday() < 6:
+		return false
+	default:
+		return true
+	}
 }
